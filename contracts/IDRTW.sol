@@ -17,7 +17,7 @@ contract IDRTW is ERC20 {
     }
 
     /**
-     * @notice Mint IDRT 18 Decimals from IDRT
+     * @notice Mint 18 Decimals IDRTW from IDRT
      * @dev Lock IDRT in this contract, and emit IDRT 18 Decimals
      * @param amount, amount to mint (in term of original IDRT)
      * @return bool
@@ -50,7 +50,6 @@ contract IDRTW is ERC20 {
 
     /**
      * @dev Returns the corresponding token for IDRTW
-     * name.
      */
     function erc20() public view returns (address) {
         return address(_erc20);
